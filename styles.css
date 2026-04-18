@@ -1,0 +1,214 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+body {
+  background-color: #030014;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  top: 0;
+  z-index: 50;
+
+  background-color: #03001427;
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 15px rgba(42, 14, 97, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  background-color: #03001427;
+  backdrop-filter: blur(12px);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 45%;
+}
+
+nav li,
+nav a {
+  list-style: none;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+nav a {
+  display: inline-block;
+}
+
+nav li a:hover {
+  color: rgb(112 66 248);
+  transition-duration: .15s;
+  transform: translateY(-2.5px);
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#blackHole {
+  position: absolute;
+  top: -25.6rem;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  z-index: -20;
+
+  transform: rotate(180deg);
+}
+
+
+.introductionContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+  width: 100vw;
+  height: 70vh;
+}
+
+.referentialImage {
+  width: 50%;
+  height: 100%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.introductoryText {
+  width: 50%;
+  height: 60%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.socialMediaIcons {
+  display: flex;
+  gap: 2%;
+}
+
+.socialMediaIcons img {
+  width: 2.5rem;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.socialMediaIcons img:hover {
+  filter: brightness(0.7);
+  transform: translateY(-2.5px);
+}
+
+.text {
+  font-size: 3.75rem;
+}
+
+.introductoryText p {
+  margin-top: 2.5%;
+  color: rgb(156, 163, 175);
+}
+
+.introductoryButtons {
+  margin-top: 3%;
+  display: flex;
+  gap: 1rem;
+}
+
+.genericButton {
+  padding: 0.7rem 1.8rem;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+
+  background: linear-gradient(180deg,
+      rgba(124, 58, 237, 0.35),
+      rgba(79, 70, 229, 0.15));
+
+  border: 1px solid rgba(124, 58, 237, 0.6);
+
+  backdrop-filter: blur(12px);
+
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.genericButton:hover {
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.35);
+  color: rgb(112 66 248);
+  transform: translateY(-2.5px);
+}
+
+#profile {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(78, 70, 229, 0.014);
+}
+
+.sectionTitle {
+  text-align: center;
+  padding: 5% 0 3% 0;
+}
+.cardGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologyCard {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: 40rem;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+
+  background: linear-gradient(180deg,
+      rgba(124, 58, 237, 0.082),
+      rgba(79, 70, 229, 0.15));
+
+  border: 1px solid rgba(124, 58, 237, 0.6);
+
+  backdrop-filter: blur(12px);
+}
+
+
+.levelbox {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  /* background: linear-gradient(180deg,
+      rgba(124, 58, 237, 0.082),
+      rgba(79, 70, 229, 0.15)); */
+
+  border: 1px solid rgba(124, 58, 237, 0.6);
+
+  backdrop-filter: blur(12px);
+}
+
+#projects {
+  width: 100vw;
+  height: 100vh;
+  /* scroll-snap-align: start; */
+}
