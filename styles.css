@@ -176,14 +176,42 @@ nav li a:hover {
 
 .tecnologyCard {
   display: flex;
-  padding: 3.5%;
+  padding: 3%;
   flex-direction: column;
   width: 50rem;
-  height: 40rem;
+  height: auto;
   border-radius: 12px;
   color: white;
   text-decoration: none;
+  
+  background: linear-gradient(180deg,
+  rgba(124, 58, 237, 0.082),
+  rgba(79, 70, 229, 0.15));
+  
+  border: 1px solid rgba(124, 58, 237, 0.6);
+  
+  backdrop-filter: blur(12px);
+}
 
+#tecnologyCardTitle {
+  font-size: 2.5rem;
+}
+
+#tecnologyCardTool {
+  display: flex;
+  justify-content: start;
+  gap: 2%;
+  width: 50rem;
+  height: 4.5rem;
+  /* background-color: red; */
+  margin: 3% 0 3% 0;
+}
+
+.levelbox {
+  width: 50rem;
+  height: 20rem;
+  border-radius: 12px;
+  /* background-color: white; */
   background: linear-gradient(180deg,
       rgba(124, 58, 237, 0.082),
       rgba(79, 70, 229, 0.15));
@@ -191,22 +219,4 @@ nav li a:hover {
   border: 1px solid rgba(124, 58, 237, 0.6);
 
   backdrop-filter: blur(12px);
-}
-
-.levelbox {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  /* background: linear-gradient(180deg,
-      rgba(124, 58, 237, 0.082),
-      rgba(79, 70, 229, 0.15)); */
-
-  border: 1px solid rgba(124, 58, 237, 0.6);
-
-  backdrop-filter: blur(12px);
-}
-
-#projects {
-  width: 100vw;
-  height: 100vh;
 }
