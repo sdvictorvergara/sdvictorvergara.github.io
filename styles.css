@@ -80,7 +80,6 @@ nav li a:hover {
   transform: translate(-50%, -50%) rotate(180deg);
 }
 
-
 .introductionContent {
   display: flex;
   justify-content: center;
@@ -157,4 +156,97 @@ nav li a:hover {
   box-shadow: 0 8px 25px rgba(124, 58, 237, 0.35);
   color: rgb(112 66 248);
   transform: translateY(-2.5px);
+}
+
+#profile {
+  padding-bottom: 5%;
+  width: 100vw;
+  height: auto;
+  background-color: rgba(78, 70, 229, 0.014);
+}
+
+.sectionTitle {
+  text-align: center;
+  padding: 5% 0 3% 0;
+}
+.cardGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologyCard {
+  display: flex;
+  padding: 3%;
+  flex-direction: column;
+  width: 50rem;
+  height: auto;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  
+  background: linear-gradient(180deg,
+  rgba(124, 58, 237, 0.082),
+  rgba(79, 70, 229, 0.15));
+  
+  border: 1px solid rgba(124, 58, 237, 0.6);
+  
+  backdrop-filter: blur(12px);
+}
+
+#tecnologyCardTitle {
+  font-size: 2.5rem;
+}
+
+#tecnologyCardTool {
+  display: flex;
+  justify-content: start;
+  gap: 2%;
+  width: 50rem;
+  height: 4.5rem;
+  margin: 3% 0 3% 0;
+}
+
+.levelbox {
+  width: 50rem;
+  height: auto;
+  border-radius: 12px;
+  background: linear-gradient(180deg,
+      rgba(124, 58, 237, 0.082),
+      rgba(79, 70, 229, 0.15));
+
+  border: 1px solid rgba(124, 58, 237, 0.6);
+
+  backdrop-filter: blur(12px);
+}
+
+.skill {
+  margin: 3rem;
+}
+
+.skillHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.skillHeader img {
+  width: 4rem;
+  height: 3.5rem;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed, #4f46e5);
+  border-radius: 10px;
+  transition: width 0.5s ease;
 }
