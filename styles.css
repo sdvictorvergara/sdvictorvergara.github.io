@@ -169,10 +169,12 @@ nav li a:hover {
   text-align: center;
   padding: 5% 0 3% 0;
 }
+
 .cardGrid {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .tecnologyCard {
@@ -184,14 +186,16 @@ nav li a:hover {
   border-radius: 12px;
   color: white;
   text-decoration: none;
-  
+
   background: linear-gradient(180deg,
-  rgba(124, 58, 237, 0.082),
-  rgba(79, 70, 229, 0.15));
-  
+      rgba(124, 58, 237, 0.082),
+      rgba(79, 70, 229, 0.15));
+
   border: 1px solid rgba(124, 58, 237, 0.6);
-  
+
   backdrop-filter: blur(12px);
+
+  margin-bottom: 3%;
 }
 
 #tecnologyCardTitle {
@@ -249,4 +253,51 @@ nav li a:hover {
   background: linear-gradient(90deg, #7c3aed, #4f46e5);
   border-radius: 10px;
   transition: width 0.5s ease;
+}
+
+
+#enterpriseExperience {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.experience:only-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 500px;
+}
+
+.experience {
+  width: 25.6rem;
+  height: auto;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+
+  background: linear-gradient(180deg,
+      rgba(124, 58, 237, 0.082),
+      rgba(79, 70, 229, 0.15));
+
+  border: 1px solid rgba(124, 58, 237, 0.6);
+
+  backdrop-filter: blur(12px);
+
+  padding: 1rem;
+}
+
+.experience span {
+  font-size: 1.3rem;
+
+}
+
+.experience hr {
+  margin: 1.5%;
+}
+
+.experience p {
+  font-size: 3.75;
+  color: rgb(156, 163, 175);
+  margin-top: 0.5rem;
 }
