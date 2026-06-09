@@ -28,7 +28,7 @@ fetch("./assets/data/languagelvl.json").then(response => {
     console.error("Error:", error);
   });
 
-const container2 = document.getElementById("enterpriseExperience");
+const container2 = document.getElementById("timelineContainer");
 
 fetch("./assets/data/enterpriseExperience.json").then(response => {
 
@@ -39,16 +39,19 @@ fetch("./assets/data/enterpriseExperience.json").then(response => {
 })
 
   .then(enterpriseExperience => {
-
     enterpriseExperience.forEach(enterprise => {
-      const experience = document.createElement("div");
-      experience.classList.add("experience");
-      experience.innerHTML = `
-        <span>${enterprise.name}</span>
-        <p>${enterprise.date}</p>
-        <p>${enterprise.description}</p>
-    `;
-      container2.appendChild(experience);
+
+      const timelineItem = document.createElement("div");
+      timelineItem.classList.add("timeline-item");
+      
+      timelineItem.innerHTML = `
+        <div class="timeline-card">
+          <h3>${enterprise.name}</h3>
+          <div class="timeline-date">${enterprise.date}</div>
+          <p>${enterprise.description}</p>
+        </div>
+      `;
+      container2.appendChild(timelineItem);
     });
   })
   .catch(error => {

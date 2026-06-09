@@ -23,5 +23,10 @@
         "name": "JavaScript",
         "icon": "./assets/icons/javascript.svg",
         "lvl": "5%"
+    },
+    {
+        "name": "MySQL",
+        "icon": "./assets/icons/mysql.svg",
+        "lvl": "10%"
     }
 ]
