@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Centros de Estudios Kuma",
+        "date": "— March 2025 – June 2025 —",
+        "description": "Gained hands-on experience working with Ubuntu Server VPS environments from providers such as Arsys, Ionos, Gigas, and Hetzner, focusing on server configuration, deployment, and management. Also contributed to the IT department, supporting infrastructure and ensuring smooth operation of critical systems."
+    },
+        {
+        "name": "Astican – Astilleros Canarios",
+        "date": "— May 2026 – June 2026 —",
+        "description": "Worked on the development and improvement of business applications using Microsoft Power Apps, Power Automate, and SharePoint Lists, focusing on workflow automation, debugging, testing, and process optimization. Contributed to the design of scalable solutions, integration of automated document generation and email delivery processes, and management of non-relational data through SharePoint, while also producing technical documentation, flow diagrams, and user guides to support long-term maintenance and future development."
+    }
+]

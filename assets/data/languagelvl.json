@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Python",
+        "icon": "./assets/icons/python.svg",
+        "lvl": "11%"
+    },
+    {
+        "name": "Java",
+        "icon": "./assets/icons/java.svg",
+        "lvl": "15%"
+    },
+    {
+        "name": "HTML",
+        "icon": "./assets/icons/html.svg",
+        "lvl": "20%"
+    },
+    {
+        "name": "CSS",
+        "icon": "./assets/icons/css.svg",
+        "lvl": "18%"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "./assets/icons/javascript.svg",
+        "lvl": "5%"
+    },
+    {
+        "name": "MySQL",
+        "icon": "./assets/icons/mysql.svg",
+        "lvl": "10%"
+    }
+]
