@@ -57,3 +57,36 @@ fetch("./assets/data/enterpriseExperience.json").then(response => {
   .catch(error => {
     console.error("Error:", error);
   });
+
+const containerProjects = document.getElementById("projectsContainer");
+
+fetch("./assets/data/projects.json")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("No se pudo cargar el archivo projects.json");
+    }
+    return response.json();
+  })
+  .then(projects => {
+    projects.reverse().forEach(project => {
+      const card = document.createElement("div");
+      card.classList.add("project-card");
+      
+      const demoButton = project.demo 
+        ? `<a href="${project.demo}" target="_blank" class="genericButton">Demo</a>` 
+        : "";
+
+      card.innerHTML = `
+        <img src="${project.image}" alt="${project.name}" class="project-img">
+        <h3>${project.name}</h3>
+        <div class="button-group">
+          <a href="${project.repository}" target="_blank" class="genericButton">GitHub</a>
+          ${demoButton}
+        </div>
+      `;
+      containerProjects.appendChild(card);
+    });
+  })
+  .catch(error => {
+    console.error("Error cargando proyectos:", error);
+  });

@@ -1,0 +1,19 @@
+[
+    {
+        "name":"vinyl-record-website",
+        "image":"./assets/images/vinyl-record-website__home.png",
+        "repository":"https://github.com/sdvictorvergara/vinyl-record-website"
+    },
+    {
+        "name":"nook-plaza",
+        "image":"https://raw.githubusercontent.com/sdvictorvergara/nook-plaza/main/screenshots/home.png",
+        "repository":"https://github.com/sdvictorvergara/nook-plaza",
+        "demo":"https://nook-plaza-7babb.web.app/"
+    },
+    {
+        "name":"AppWebAllUniverse",
+        "image":"https://raw.githubusercontent.com/Ixf2/AppWebAllUniverse/refs/heads/main/screenshot/home.png",
+        "repository":"https://github.com/Ixf2/AppWebAllUniverse",
+        "demo":"https://appweballuniverse.web.app/"
+    }
+]
