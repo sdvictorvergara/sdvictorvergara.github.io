@@ -319,7 +319,9 @@ nav li a:hover {
 
 .timeline-card {
   padding: 1.5rem;
-  background: linear-gradient(180deg, rgba(124, 58, 237, 0.082), rgba(79, 70, 229, 0.15));
+    background: linear-gradient(180deg,
+      rgba(124, 58, 237, 0.082),
+      rgba(79, 70, 229, 0.15));
   border: 1px solid rgba(124, 58, 237, 0.6);
   backdrop-filter: blur(12px);
   border-radius: 12px;
@@ -379,4 +381,10 @@ nav li a:hover {
   .timeline-card {
     width: 100%;
   }
+}
+
+#projects {
+  padding-bottom: 5%;
+  width: 100vw;
+  height: auto;
 }
